@@ -1,0 +1,60 @@
+name: calculator # نام پروژه تغییر یافت به حروف کوچک
+description: A cool and scientific calculator built with Flutter.
+
+# این بخش برای انتشار پکیج در pub.dev است. اگر قصد انتشار ندارید، 'none' را نگه دارید.
+publish_to: 'none'
+
+# شماره نسخه برنامه. هر بار که تغییری اساسی در برنامه ایجاد می‌کنید، آن را افزایش دهید.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0' # محدوده نسخه Flutter SDK که پروژه با آن سازگار است.
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # آیکون‌های Material Design
+  cupertino_icons: ^1.0.8
+
+  # فونت‌های سفارشی (برای فونت Vazirmatn در پروژه شما)
+  google_fonts: ^6.2.1
+
+  # برای ارزیابی عبارات ریاضی پیچیده (sin, cos, log, power, etc.)
+  math_expressions: ^2.5.0
+
+  # برای ذخیره تنظیمات ساده کاربر (مثل حالت تیره/روشن یا حالت علمی/ساده)
+  shared_preferences: ^2.2.2
+
+  # برای انیمیشن‌های متنی (مثل صفحه اسپلش)
+  animated_text_kit: ^4.2.2
+
+  # ✅ پکیج برای باز کردن لینک‌های خارجی
+  url_launcher: ^6.2.2 # یا آخرین نسخه موجود. در اینجا باید قرار گیرد.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # ابزاری برای بهبود کیفیت کد و رعایت استانداردهای کدنویسی Flutter
+  flutter_lints: ^3.0.0 # یا ^4.0.0 اگر از SDK 3.10 به بالا استفاده می‌کنید.
+
+  # ✅ اضافه کردن پکیج برای تغییر خودکار آیکون برنامه
+  flutter_launcher_icons: "^0.13.1" # مطمئن شوید که آخرین نسخه را استفاده می‌کنید
+
+flutter:
+  # این خط ضروری است و به Flutter می‌گوید از Material Design استفاده کند.
+  uses-material-design: true
+
+  # ✅ مشخص کردن مسیر assets (که آیکون هم شاملش میشه)
+  assets:
+    - assets/icon/
+
+# ✅ تنظیمات flutter_launcher_icons برای تولید آیکون
+flutter_launcher_icons:
+  android: "launcher_icon" # نام پیش‌فرض آیکون در اندروید
+  ios: true              # برای تولید آیکون برای iOS
+  image_path: "assets/icon/aks.jpg" # مسیر دقیق آیکون شما
+  # اگر می‌خواهید آیکون‌های تطبیقی اندروید (Android Adaptive Icons) داشته باشید:
+  # adaptive_icon_background: "#ffffff" # رنگ پس‌زمینه (می‌تواند یک رنگ یا تصویر باشد)
+  # adaptive_icon_foreground: "assets/icon/aks_foreground.png" # تصویر پیش‌زمینه (اختیاری)
