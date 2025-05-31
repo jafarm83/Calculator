@@ -20,7 +20,6 @@ git clone https://github.com/jafarm83/Calculator.git
 cd Calculator
 
 
-
-***Run the app***
+# Run the app
 flutter pub get
 flutter run
